@@ -1,0 +1,159 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: #f4f4f4;
+    line-height: 1.6;
+}
+
+/* Header Styling */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 20px;
+    background-color: #333;
+    color: white;
+}
+
+.logo img {
+    width: 100px; /* Adjust logo size */
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.1em;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #ff9800;
+}
+
+
+/*Signin and Login button*/
+.auth-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.auth-buttons button {
+    background-color: #ff9800;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+    font-size: 1em;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.auth-buttons button:hover {
+    background-color: #ff5722;
+}
+
+/* Main Content Styling */
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: calc(100vh - 200px);;
+    text-align: center;
+    background-image: url('Background.jpeg'); /* Replace with your image */
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 0 20px;
+}
+
+.welcome h1 {
+    font-size: 3em;
+    color: #fff;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.welcome p {
+    font-size: 1.5em;
+    color: #ddd;
+    max-width: 600px;
+    margin: 0 auto;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    padding: 14px 14px;
+    background-color: #333;
+    color: white;
+}
+
+footer p {
+    font-size: 0.9em;
+    margin: 5px 0;
+}
+
+
+/*==============================================================*/
+/* Responsive Styling */
+@media (max-width: 768px) {
+    .nav-links {
+        gap: 10px;
+    }
+
+    .auth-buttons button {
+        padding: 6px 12px;
+        font-size: 0.9em;
+    }
+
+    .welcome h1 {
+        font-size: 2.2em;
+    }
+
+    .welcome p {
+        font-size: 1.2em;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .auth-buttons {
+        gap: 5px;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 5px;
+    }
+
+    .welcome h1 {
+        font-size: 1.8em;
+    }
+
+    .welcome p {
+        font-size: 1em;
+    }
+}
